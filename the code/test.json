@@ -1,0 +1,30 @@
+{
+
+"str1" : {
+"id"        : "str1",
+"contain"   : "You enter the BONE ZONE! What you gonna do?",
+"next_str"  : "str2, str3, str4"
+},
+
+"str2" : {
+"id"        : "str2",
+"contain"   : "test2",
+"next_str"  : "str1, str3, str4"
+},
+
+"str3" : {
+"id"        : "str3",
+"contain"   : "test3",
+"next_str"  : "str2, str1, str4"
+},
+
+"str4" : {
+"id"        : "str4",
+"contain"   : "test4",
+"next_str"  : "str2, str3, str1"
+}
+}
+# for json decode
+jsn = open('test.json', 'r')
+jsndec = json.load(jsn)
+print(jsndec)
